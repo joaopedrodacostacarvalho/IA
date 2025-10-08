@@ -6,6 +6,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+datasets = {
+    'assessments': '/content/assessments.csv',
+    'courses.csv': '/content/courses.csv',
+    'studentAssessment': '/content/studentAssessment.csv',
+    'studentInfo': '/content/studentInfo.csv',
+    'studentVle': '/content/studentVle.csv',
+    'vle': '/content/vle.csv'
+}
+
 
 # Função para verificar Se contém Dados Nulos
 def constainIsNull(df): 
@@ -30,3 +39,4 @@ def plotImgsScatter(df, column_x:str, column_y:str):
   
   fig = px.scatter(df, x=df.column_x, y=df.column_y)
   return fig.show()
+
