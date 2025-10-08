@@ -19,5 +19,14 @@ def fillNaNColumn(df, column:str):
 def dropColumnNaN(df, column:str):
   return df.drop(column, axis=1).corr()
 
+#### Funções abaixo são para criações e Plotagem de Gráficos
 
+def plotImgsHeatMap(df):
 
+  plt.figure(figsize=(16,6))
+  return sns.heatmap(data=df, annot=True)
+
+def plotImgsScatter(df, column_x:str, column_y:str):
+  
+  fig = px.scatter(df, x=df.column_x, y=df.column_y)
+  return fig.show()
