@@ -1,0 +1,7 @@
+[theme]
+base="light"
+primaryColor="#1a73e8"          # azul Google/Colab
+backgroundColor="#ffffff"        # branco
+secondaryBackgroundColor="#f1f3f4"  # cinza claro Material
+textColor="#202124"              # preto Google
+font="sans serif"
